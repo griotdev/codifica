@@ -39,7 +39,7 @@ class Produto {
     print('---Detalhes Originais---\nCódigo: $_codigo\nNome: $_nome\nPreço: R\$$_precoOriginal');
     if (percentual != null && percentual > 0) {
       double precoComDesconto = _precoOriginal * (1 - percentual / 100);
-      print('---Detalhes com Desconto---\nPreço com $percentual% de desconto.\nCódigo: $_codigo\nNome: $_nome\nPreço: R\$${precoComDesconto}');
+      print('---Detalhes com Desconto---\nPreço com $percentual% de desconto.\nCódigo: $_codigo\nNome: $_nome\nPreço: R\$$precoComDesconto');
     }
   }
 
